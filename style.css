@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4.5rem;
+  top: 52%;
+}
+h1,
+.players {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 10.5rem;
+  transform: translate(-50%, -50%);
+}
+.player {
+  padding-right: 2.5rem;
+}
+.computer {
+  padding-left: 2.5rem;
+}
+.score {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.score-box {
+  background: #eee;
+  color: #333;
+  font-size: 4rem;
+  width: 40rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-family: inherit;
+  border-radius: 15px;
+}
+
+.btn {
+  border: 1px solid #222;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  margin: 2rem;
+  width: 20rem;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.start {
+  margin-bottom: 2rem;
+}
+.hidden {
+  display: none;
+}
+.modal-again {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  justify-content: center;
+  background-color: #eee;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-btn {
+  position: relative;
+  background-color: #222;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  margin: 2rem;
+  width: 10rem;
+  border-radius: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}

@@ -3,9 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d0b596d6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <div class="score-box">
+        <p class="score">Player v.s Computer</p>
+        <span class="player-score">0</span>
+        <span> : </span>
+        <span class="computer-score">0</span>
+      </div>
+    </header>
+    <main>
+      <section class="left">
+        <button class="btn" name="rock">
+          <i class="fas fa-hand-rock fa-3x"></i>
+        </button>
+        <button class="btn" name="paper">
+          <i class="fas fa-hand-paper fa-3x"></i>
+        </button>
+        <button class="btn" name="scissors">
+          <i class="fas fa-hand-scissors fa-3x"></i>
+        </button>
+      </section>
+      <section class="right">
+        <p class="message">Score 5 to win.</p>
+        <div class="start">👈 Click anyone to start!</div>
+      </section>
+      <div class="modal-again hidden">
+        <p>Again?</p>
+        <button class="modal-btn">Back</button>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <footer>Made by Fangfang Xiao</footer>
     <script src="scripts.js"></script>
   </body>
 </html>
