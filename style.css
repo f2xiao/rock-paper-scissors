@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 45%;
   box-sizing: border-box;
 }
 
@@ -26,13 +26,18 @@ header {
 }
 
 main {
-  height: 65vh;
+  height: 62vh;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
+footer {
+  height: 2vh;
+  position: absolute;
+  padding-left: 3rem;
+  text-align: center;
+}
 .left {
   width: 52rem;
   display: flex;
@@ -86,14 +91,14 @@ h1,
 
 .btn {
   border: 1px solid #222;
-  background-color: #eee;
+  background-color: #ccc;
   color: #222;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
   margin: 2rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 15px;
 }
 
